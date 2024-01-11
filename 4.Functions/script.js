@@ -20,12 +20,12 @@ const square2 = function (number) {
 };
 
 //3.ARROW FUNCTION
-//most used and most modern
+//most used and most modern function
 const square3 = (number) => {
   return number * number;
 };
 
-//since it only has one parameter and one return statement,it can be simplified like this
+//since it only has one parameter and one return statement,it can be simplified like this:
 
 //const square3=number=>number*number;
 
