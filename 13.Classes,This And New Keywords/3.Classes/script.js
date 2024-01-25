@@ -3,7 +3,7 @@
 
 //ni kalau declare object cara biasa
 const person = {
-  name: "Emma", //String
+  name: "Peyi", //String
   age: "21", //Number
   isWorking: true, //Boolean
 };
@@ -17,7 +17,7 @@ const person = {
 //contoh:
 
 // const person1={
-//     name:"Emma",
+//     name:"Peyi",
 //     age:"21",
 //     isWorking:true,
 // }
@@ -48,7 +48,7 @@ class Person {
 }
 
 //initialize the value
-const user1 = new Person("Emma", 21, true);
+const user1 = new Person("Peyi", 21, true);
 const user2 = new Person("ZeroTwo", 24, false);
 const user3 = new Person("Hori", 21, true);
 
@@ -72,7 +72,7 @@ const createPerson = (name, age, isWorking) => {
 };
 
 //initialize the value
-const person1 = createPerson("Emma", 21, true);
+const person1 = createPerson("Peyi", 21, true);
 const person2 = createPerson("ZeroTwo", 24, false);
 const person3 = createPerson("Hori", 21, true);
 
