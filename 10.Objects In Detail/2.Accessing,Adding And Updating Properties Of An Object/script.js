@@ -32,7 +32,7 @@ console.log(person[property]); //kalau buat console.log(person.property) dia aka
 console.log(person["makanan kegemaran"]); //kalau dot notation takleh buat benda ni
 
 //Add
-person.car = { name: "GTR R35", colour: "Matte Black" }; //add car Object inside the person Object
+person.car = { name: "BMW", colour: "Matte Black" }; //add car Object inside the person Object
 console.log(person);
 console.log(person["car"]);
 
