@@ -1,12 +1,12 @@
 //LOGIC AND CONTROL FLOW
 
 //1.IF ELSE STATEMENT
-const age = 18;
+const age = 21;
 
-if (age > 18) {
+if (age > 21) {
   console.log("You may enter!");
-} else if (age === 18) {
-  console.log("You just turned 18,welcome!");
+} else if (age === 21) {
+  console.log("You just turned 21,welcome!");
 } else {
   console.log("Grow up lil bro");
 }
@@ -17,9 +17,9 @@ if (age > 18) {
 // "?" dibaca sebagai "is"
 //so cam condition is true:false
 
-const umur = 18;
+const umur = 21;
 
-umur >= 18 ? console.log("You can drive") : console.log("You cannot drive");
+umur >= 21 ? console.log("You can drive") : console.log("You cannot drive");
 
 //3.FOR & WHILE LOOP
 
