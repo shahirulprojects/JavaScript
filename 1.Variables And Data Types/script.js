@@ -48,7 +48,7 @@ const string2 = "hello";
 console.log(string2);
 
 //backtick quote
-const string3 = "shahirul";
+const string3 = "emma";
 const string4 = `hai,${string3}`;
 console.log(string4);
 
@@ -123,7 +123,7 @@ console.log(x);
 //Array and Date adalah dikira sebagai single object data type
 
 const person = {
-  name: "Shahirul",
+  name: "emma",
   age: 21,
 };
 console.log(person);
