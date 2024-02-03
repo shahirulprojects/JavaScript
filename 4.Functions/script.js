@@ -41,7 +41,7 @@ function sayHi(name) {
   console.log(`Hi,${name}`);
 }
 
-sayHi("shahirul");
+sayHi("emma");
 
 //Example 3
 function add(a, b) {
@@ -85,7 +85,7 @@ const greet = (name, age = 0) => {
   console.log(`${name} is ${age}  years old`);
 };
 
-greet("shahirul");
+greet("emma");
 //set initial value for age to 0 sebab age tak kena defined,defined name je
 //katakanla age tu defined,dia akan tunjuk age yang kita defined tu instead of 0
 //0 tu macam failsafe la senang cakap
