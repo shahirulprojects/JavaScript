@@ -22,15 +22,15 @@ var age = 20; //kalau macamni dia takkan dapat error cuma akan dapat "undefined"
 //Example 2
 function umur1() {
   console.log(message);
-  var message = "test";
+  var message = "uji";
 }
 umur1(); //akan dapat undefined sebab declare message tu bawah console.log()
 
 //Example 3
 umur2(); //panggil function sebelum kita defined function tu
 //tapi kalau function kena hoisted,kita akan dapat result function tu instead of "undefined" sebab function tak kisah pun kena declare sebelum atau selepas dia kena panggil
-//akan dapat "test"
+//akan dapat "uji"
 function umur2() {
-  var message = "test2";
+  var message = "uji2";
   console.log(message);
 }
