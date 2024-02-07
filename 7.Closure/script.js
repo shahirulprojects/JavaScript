@@ -29,7 +29,7 @@ myFunc();
 
 //Example 2
 const outer = () => {
-  const outerVar = "Hello!";
+  const outerVar = "Hola!";
 
   const inner = () => {
     const innerVar = "Hi!";
