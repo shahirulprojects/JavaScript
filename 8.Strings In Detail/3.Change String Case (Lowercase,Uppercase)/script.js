@@ -1,6 +1,6 @@
 //UPPERCASE AND LOWERCASE LETTERS
 
-const mixedCaseString = "Hello!,how are you?";
+const mixedCaseString = "Hola!,how are you?";
 
 //1.LOWERCASE
 const lowerCaseString = mixedCaseString.toLowerCase(); //kena declare variable baru sebab toLowerCase() method tak ubah string tu tapi dia cipta string baru yang lowercase
