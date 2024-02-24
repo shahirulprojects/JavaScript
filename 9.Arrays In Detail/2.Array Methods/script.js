@@ -1,4 +1,4 @@
-const names = ["Harry", "Emma", "Dahyun", "Cate", "Emilia"];
+const names = ["Shahirul", "Emma", "Dahyun", "Cate", "Emilia"];
 
 //1.ARRAY PUSH
 //adds a new element containing the entered value to the end of the array
@@ -14,12 +14,12 @@ console.log(names);
 
 //3.ARRAY SHIFT
 //deletes the FIRST element of an array
-names.shift(); //remove Harry since Harry is the first element
+names.shift(); //remove Shahirul since Shahirul is the first element
 console.log(names);
 
 //4.ARRAY UNSHIFT
 //adds a new element to the START of an array
-names.unshift("Harry"); //adds Harry to the start of the array
+names.unshift("Shahirul"); //adds Shahirul to the start of the array
 //console.log(names.unshift()); kalau buat camni dia akan return the length of the current array
 console.log(names);
 
@@ -37,6 +37,6 @@ console.log(names);
 
 //6.ARRAY SLICE
 //copies certain elements of an array into a newly created array
-const HarryWives = names.slice(1); //index 1 tu adalah index di mana kita start copy and pasting the elements into a new array
-//const peopleThatLikeHarry=names.slice(1,3); //boleh buat camni kalau kita nak stop copy dekat certain index.Contoh kalau dia letak 3,dia akan berhenti SEBELUM index 3
-console.log(HarryWives);
+const ShahirulWives = names.slice(1); //index 1 tu adalah index di mana kita start copy and pasting the elements into a new array
+//const peopleThatLikeShahirul=names.slice(1,3); //boleh buat camni kalau kita nak stop copy dekat certain index.Contoh kalau dia letak 3,dia akan berhenti SEBELUM index 3
+console.log(ShahirulWives);
