@@ -23,7 +23,7 @@ console.log(positiveNumbers2);
 
 //Example 2
 const employeeData = [
-  { name: "Peyi", overtime: 5 },
+  { name: "Lydia", overtime: 5 },
   { name: "Emma", overtime: 10 },
   { name: "Dahyun", overtime: 12 },
 ];
