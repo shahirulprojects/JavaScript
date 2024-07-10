@@ -122,3 +122,29 @@ let string = "Hello";
 string += " I am Emma!";
 
 console.log(string);
+
+// PRACTICE
+
+// all 1
+const nombor1 = 10;
+const nombor2 = 2;
+
+const result = nombor1 / nombor2;
+
+if (result === 5) {
+  console.log("The result is equal to 5");
+} else if (result < 5) {
+  console.log("The result is less than 5");
+} else {
+  console.log("The result is greater than 5");
+}
+
+// all 2
+const nombor3 = 7;
+const nombor4 = 2;
+let matematik = nombor3 ** nombor4;
+
+while (matematik <= 55) {
+  console.log(`count:${matematik}`);
+  matematik++;
+}

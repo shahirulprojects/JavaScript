@@ -89,3 +89,36 @@ greet("emma");
 //set initial value for age to 0 sebab age tak kena defined,defined name je
 //katakanla age tu defined,dia akan tunjuk age yang kita defined tu instead of 0
 //0 tu macam failsafe la senang cakap
+
+//PRACTICE
+
+// function declaration
+function matematik1(nombor) {
+  nombor + nombor;
+}
+
+const resultmatematik1 = matematik1(5);
+console.log(resultmatematik1);
+
+// function expression
+const matematik2 = function (nombor) {
+  return nombor / nombor;
+};
+
+const resultmatematik2 = matematik1(10);
+console.log(resultmatematik2);
+
+// arrow function 1
+const matematik3 = (nombor) => {
+  return nombor * nombor;
+};
+
+const resultmatematik3 = matematik3(20);
+console.log(resultmatematik3);
+
+// arrow function 2
+const biodata = (name, age = 30) => {
+  console.log(`Hi, my name is ${name} and my age is ${age}`);
+};
+
+biodata("shahirul");

@@ -157,3 +157,22 @@ console.log(typeof message);
 message = true;
 console.log(message);
 console.log(typeof message);
+
+// PRACTICE
+
+// array
+const array = [1, 2, 3, 4, 5];
+console.log(array[3]);
+console.log(typeof array); // will show object as the data type
+
+// date
+const tarikh = new Date();
+console.log(tarikh);
+
+// numbers
+const number1 = 0.5;
+const number2 = 0.7;
+const mathematic = number1 * number2;
+
+console.log(mathematic);
+console.log(mathematic.toFixed(1));

@@ -33,3 +33,37 @@ if (true) {
   const nama = "emma";
   console.log(nama); //variable "nama" hanya boleh dipanggil dalam "if" block ni je sebab dia kena declare dalam ni
 }
+
+// PRACTICE
+
+// global scope
+const person1 = "Shahirul";
+
+const logPerson1 = () => {
+  console.log(person1);
+};
+
+logPerson1();
+
+// local scope / function scope
+const logPerson2 = () => {
+  const person2 = "Ikmal";
+  console.log(person2);
+
+  const logPerson3 = () => {
+    console.log(person2);
+  };
+  logPerson3();
+};
+
+logPerson2();
+
+// block scope
+const apple1 = 2;
+const apple2 = 4;
+const result = apple1 + apple2;
+
+if (result === 6) {
+  const person3 = "Emma";
+  console.log(`${person3} has ${result} apples`);
+}

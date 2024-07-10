@@ -35,3 +35,40 @@ while (i < 10) {
   console.log(i);
   i++;
 }
+
+// PRACTICE
+
+// if statement
+const duit = 1000;
+
+if (duit > 5000) {
+  console.log("You can buy this item");
+} else if (duit === 5000) {
+  console.log("You can buy this item but you will not have any money left");
+} else {
+  console.log("Up your money game lil bro");
+}
+
+// ternary operator
+const saya = "hensem";
+
+saya === "hensem"
+  ? console.log("fuiyoo hensemla awak ni")
+  : console.log("eee tak hensemm");
+
+// for loop
+const loop = 19;
+
+for (let i = 0; i < loop; i++) {
+  console.log(`count:${i}`);
+}
+
+// while loop
+let ulang = 0;
+
+while (ulang != 10) {
+  console.log(
+    `This will loop until the number reaches 10, current number:${ulang}`
+  );
+  ulang++;
+}
