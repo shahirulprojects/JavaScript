@@ -43,3 +43,19 @@ const innerFn = outer(); //kita nak access inner function tu actually tapi sebab
 //bila kita panggil satu function,dia akan return statement.Ha time ni la kita return inner function sebab kita kan actually nak panggil dia
 
 innerFn();
+
+// PRACTICE
+
+const name1 = () => {
+  const nama = "Emma";
+
+  const name2 = () => {
+    console.log(nama);
+  };
+
+  name2();
+};
+
+const panggilName = name1();
+
+panggilName();

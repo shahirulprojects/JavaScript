@@ -29,8 +29,22 @@ umur1(); //akan dapat undefined sebab declare message tu bawah console.log()
 //Example 3
 umur2(); //panggil function sebelum kita defined function tu
 //tapi kalau function kena hoisted,kita akan dapat result function tu instead of "undefined" sebab function tak kisah pun kena declare sebelum atau selepas dia kena panggil
-//akan dapat "uji"
+//akan dapat "uji2"
 function umur2() {
   var message = "uji2";
   console.log(message);
 }
+
+// PRACTICE
+
+// hoisting variable biasa
+console.log(umur);
+var umur = 30;
+
+// hoisting function
+function umur2() {
+  console.log(`Umur saya ${umur} tahun`);
+  const umur = 22;
+}
+
+umur2();
