@@ -42,3 +42,32 @@ console.log(employeeNames);
 //tapi camna pulak kalau kita nak kasi message dekat setiap employee tu?
 //ha kita buat camni
 employeeNames.forEach((name) => console.log(`${name} received a reward`)); //pakai Array forEach and backtick quote
+
+// PRACTICE
+
+const employeeInfo = [
+  {
+    nama: "Shahirul",
+    hours: 10,
+  },
+  {
+    nama: "Shannon",
+    hours: 5,
+  },
+  {
+    nama: "Sheryl",
+    hours: 7,
+  },
+  {
+    nama: "Olly",
+    hours: 10,
+  },
+];
+
+const employeeBagus = employeeInfo.filter((employee) => employee.hours > 5);
+console.log(employeeBagus);
+
+const namaEmployee = employeeBagus.map((employee) => employee.nama);
+console.log(namaEmployee);
+
+namaEmployee.forEach((nama) => console.log(`${nama} akan terima hadiah`));

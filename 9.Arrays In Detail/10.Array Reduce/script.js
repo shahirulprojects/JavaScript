@@ -2,15 +2,15 @@
 //untuk totalkan nilai elements dalam array into a single value
 //tak kirala numbers,string,object,properties of object
 
-//nak cari total grocery 
-const groceryList=[29,12,45,35,87,110];
+//nak cari total grocery
+const groceryList = [29, 12, 45, 35, 87, 110];
 
 //boleh je pakai forEach method tapi dia akan buatkan kita declare extra variable therefore it is not the best way to do it
 //ni contoh kalau pakai For Each method
-let sum=0; //extra variable
+let sum = 0; //extra variable
 
-groceryList.forEach((grocery)=>{
-sum+=grocery;
+groceryList.forEach((grocery) => {
+  sum += grocery;
 });
 
 console.log(sum);
@@ -20,9 +20,11 @@ console.log(sum);
 //currentValue=merujuk kepada elements dalam array yang kita tengah rujuk time iteration tu
 
 //Example 1
-const total=groceryList.reduce((accumulator,currentValue)=>accumulator+currentValue,0)
+const total = groceryList.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  0
+);
 //nama parameter boleh letak apa2 tapi saja nak tunjuk yang parameter first is for accumulator value and parameter second is for current value  //0 tu is a initial value of a accumulator.In this case kita letak 0
-
 
 //how it works
 //Loop 1:
@@ -32,12 +34,12 @@ const total=groceryList.reduce((accumulator,currentValue)=>accumulator+currentVa
 //accumulator=29,currentValue=12,accumulator+currentValue=29+12=41 //41 ni akan jadi the new accumulator value pulak
 //Loop 3,4,5,6 apply konsep yang sama
 
-console.log(total);//so nanti total dia dapatla 318
+console.log(total); //so nanti total dia dapatla 318
 
 //Example 2
-const numbers=[1,2,3,4,5];
+const numbers = [1, 2, 3, 4, 5];
 
-const jumlah= numbers.reduce((total,price)=>total+price,0)
+const jumlah = numbers.reduce((total, price) => total + price, 0);
 //how it works
 //total=0,price=1, total+price=1 // 1 ni akan jadi the new accumulator value //in this case we named the accumulator value as total
 //total=1,price=2, total+price=3 // 3 ni akan jadi the new accumulator value
@@ -47,10 +49,10 @@ const jumlah= numbers.reduce((total,price)=>total+price,0)
 
 console.log(jumlah);
 
+// PRACTICE
 
+const nombor = [10, 90, 87, 63, 98];
 
+const jumlahNombor = nombor.reduce((jumlah, nombor) => jumlah + nombor, 0);
 
-
-
-
-
+console.log(jumlahNombor);

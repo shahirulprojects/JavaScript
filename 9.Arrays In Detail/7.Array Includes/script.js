@@ -4,23 +4,29 @@
 //Includes ni pun kita ada guna dalam string bila kita nak search for a substring
 
 //Example 1
-const array1=[1,2,3];
+const array1 = [1, 2, 3];
 console.log(array1.includes(2)); //kalau kita letak "2" (double quote disengajakan) dia akan return false sebab "2" ialah string
 
 //Example 2
-const pets=["cat","dog","llama"];
+const pets = ["cat", "dog", "llama"];
 console.log(pets.includes("cat"));
 
 //Example 3
-const bookshelf=["Moby Dick","The Great Gatsby","Pride and Prejudice"];
+const bookshelf = ["Moby Dick", "The Great Gatsby", "Pride and Prejudice"];
 
-if(bookshelf.includes("Moby Dick")){ //kalau buat "Moby dick" dia akan return false sebab includes ni case-sensitive
-    console.log("We have that book,here you go")
+if (bookshelf.includes("Moby Dick")) {
+  //kalau buat "Moby dick" dia akan return false sebab includes ni case-sensitive
+  console.log("We have that book, here you go");
+} else {
+  console.log("Cannot find the book,sorry!");
 }
-else{
-    console.log("Cannot find the book,sorry!")
+
+// PRACTICE
+
+const kasut = ["nike", "adidas", "converses"];
+
+if (kasut.includes("ADIDAS")) {
+  console.log("Kasut adidas ada");
+} else {
+  console.log("Kasut adidas takde");
 }
-
-
-
-

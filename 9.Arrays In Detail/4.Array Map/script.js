@@ -21,8 +21,54 @@ console.log(namabarang);
 console.log(hargabarang);
 
 //ni rupa dia kalau pakai Array forEach,tapi dia tak create array barula
-// const logTheName=(name)=>console.log(name);
-// inventory.forEach(logTheName)
+const logTheName = (inventory) => console.log(inventory.name);
+inventory.forEach(logTheName);
 
-// const logThePrice=(price)=>console.log(price);
-// inventory.forEach(logThePrice)
+const logThePrice = (inventory) => console.log(inventory.price);
+inventory.forEach(logThePrice);
+
+// PRACTICE
+
+// practice 1
+
+const senaraiKereta = [
+  {
+    name: "BMW",
+    price: "RM 100 000",
+  },
+  {
+    name: "Camry",
+    price: "RM 150 000",
+  },
+  {
+    name: "Mercedes",
+    price: "RM 300 000",
+  },
+  {
+    name: "Volkswagen",
+    price: "RM 700 000",
+  },
+];
+
+const namaKereta1 = senaraiKereta.map((kereta) => {
+  return kereta.name;
+});
+console.log(namaKereta1);
+
+const hargaKereta1 = senaraiKereta.map((kereta) => {
+  return kereta.price;
+});
+
+console.log(hargaKereta1);
+
+// practice 2 (kalau pakai forEach)
+
+const namaKereta2 = (kereta) => console.log(kereta.name);
+senaraiKereta.forEach(namaKereta2);
+
+const hargaKereta2 = (kereta) => console.log(kereta.price);
+senaraiKereta.forEach(hargaKereta2);
+
+const namaAndHargaKereta = (kereta) => console.log(kereta.name, kereta.price);
+
+senaraiKereta.forEach(namaAndHargaKereta);
