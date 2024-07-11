@@ -57,3 +57,22 @@ console.log(person.firstName); //tak berubah
 console.log(newPerson3.firstName); //changed to "Dahyun"
 console.log(person.car.colour); //tak berubah
 console.log(newPerson3.car.colour); //changed to "Burgundy"
+
+// PRACTICE
+
+const personInfo = {
+  name: "Shahirul",
+  age: 22,
+  car: {
+    car1: "BMW",
+    car2: "Mercedes",
+    car3: "Bezza",
+  },
+};
+
+const newPersonInfo = JSON.parse(JSON.stringify(personInfo));
+
+newPersonInfo.car.car3 = "Perodua";
+
+console.log(personInfo.car.car3);
+console.log(newPersonInfo.car.car3);

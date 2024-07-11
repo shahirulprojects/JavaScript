@@ -31,8 +31,8 @@ const person = {
 };
 
 person.getName();
-//the "this" keyword will refer to the object that the keyword is in.In this case dia dalam person Object so it will refer to the person Object whose name is "John"
-//hence why person.getName(); will print name:"John"
+//the "this" keyword will refer to the object that the keyword is in.In this case dia dalam person Object so it will refer to the person Object whose name is "Emma"
+//hence why person.getName(); will print name:"Emma"
 
 //Example 3
 function car(colour, brand, topSpeed) {

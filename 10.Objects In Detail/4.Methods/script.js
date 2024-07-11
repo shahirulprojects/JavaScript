@@ -81,3 +81,44 @@ newUser.password = "test123"; //Modify the properties
 newUser.gender = "Male"; //Adding new properties
 
 console.log(newUser); //the password will change to "test123" but there will be no gender properties because the object has been sealed
+
+// PRACTICE
+const syarikat1 = {
+  boss: "Ali",
+  assistant: "Abu",
+  manager: "Seman",
+};
+
+console.log(Object.keys(syarikat1));
+console.log(Object.values(syarikat1));
+
+const keysAndValues = Object.entries(syarikat1);
+
+keysAndValues.forEach((entry) => {
+  let key = entry[0];
+  let value = entry[1];
+
+  console.log(`${key}:${value}`);
+});
+
+const syarikat2 = {
+  boss: "Ali",
+  assistant: "Abu",
+  manager: "Seman",
+};
+const objectFreeze = Object.freeze(syarikat2);
+
+objectFreeze.boss = "Shahirul";
+
+console.log(objectFreeze.boss);
+
+const syarikat3 = {
+  boss: "Ali",
+  assistant: "Abu",
+  manager: "Seman",
+};
+const objectSeal = Object.seal(syarikat3);
+
+objectSeal.boss = "Shahirul";
+
+console.log(objectSeal.boss);

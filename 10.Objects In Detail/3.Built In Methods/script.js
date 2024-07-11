@@ -33,8 +33,20 @@ const cat2 = {
   name: "Cipo",
   age: 3,
   listAllProperties: function () {
+    //make sure that it is a normal function declaration and NOT arrow function because arrow function CANNOT use the "this" keyword
     console.log(this.name, this.age);
   },
 };
 
 cat2.listAllProperties(); //boleh je guna console.log(cat2) cam biasa tapi saja nak tunjuk cara lain
+
+// PRACTICE
+const cat3 = {
+  name: "Timmy",
+  type: "dwarf cat",
+  aboutCat: function () {
+    console.log(`This is ${this.name}, he is a ${this.type}`);
+  },
+};
+
+cat3.aboutCat();

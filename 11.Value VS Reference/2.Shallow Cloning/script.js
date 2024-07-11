@@ -47,3 +47,35 @@ console.log(otherPerson1); //tak berubah
 console.log(otherPerson2); //tak berubah
 
 //do notice that we used [...] for array cloning and {...} for object cloning
+
+// PRACTICE
+
+// ARRAY
+const array = [1, 2, 3, 4, 5];
+
+// dot operator array
+const newArray1 = [...array];
+newArray1.unshift("0");
+console.log(newArray1);
+
+// slice array
+const newArray2 = array.slice();
+newArray2.pop();
+console.log(newArray2);
+
+// OBJECT
+
+const personInfo = {
+  name: "Shahirul",
+  age: 22,
+};
+
+// dot operator object
+const newPersonInfo1 = { ...personInfo };
+newPersonInfo1.name = "Dahyun";
+console.log(newPersonInfo1);
+
+// Object.assign()
+const newPersonInfo2 = Object.assign({}, personInfo);
+newPersonInfo1.age = 23;
+console.log(newPersonInfo2);

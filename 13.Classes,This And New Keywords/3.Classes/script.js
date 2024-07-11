@@ -89,3 +89,17 @@ console.log(person3);
 //mula asalnya rupa dia camni tapi kita boleh simplify lagi,so kita buat gini
 
 // const createPerson=(name,age,isWorking)=>({name,age,isWorking}); //kena letak kurungan () and curly braces {} sebab tu memang cara dia kalau nak simplekan arrow function Object ni
+
+// PRACTICE
+
+const createInfo = (nama, umur, isKacak) => {
+  const infoTemplate = {
+    name: nama,
+    age: umur,
+    isHandsome: isKacak,
+  };
+  return infoTemplate;
+};
+
+const orang = createInfo("Shahirul", 22, true);
+console.log(orang);

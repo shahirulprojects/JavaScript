@@ -28,4 +28,4 @@ const myDate = new Date("September 29,2024");
 //date is a special type of an object that is built in Javascript
 //There is no other way to create date, we have to use the "new" keyword
 
-console.log(myDate.getFullYear());
+console.log(myDate.getFullYear()); // getFullYear is a built in function

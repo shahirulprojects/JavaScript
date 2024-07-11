@@ -39,3 +39,22 @@ console.log(person["car"]);
 //Update
 person.firstName = "Shahirul"; //akan update nama dari "Ikmal" to "Shahirul"
 console.log(person["firstName"]);
+
+// PRACTICE
+
+const personInfo = {
+  name: "Emma",
+  age: 22,
+  "favourite car": "BMW",
+};
+
+console.log(personInfo);
+
+personInfo.warnaKegemaran = "purple";
+console.log(personInfo.warnaKegemaran);
+
+personInfo.age = 20;
+console.log(personInfo.age);
+
+console.log(personInfo["favourite car"]);
+console.log(personInfo["age"]);
