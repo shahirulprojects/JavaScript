@@ -40,3 +40,24 @@ console.log(greeting2);
 
 //sebenarnya part i'm tu tak letak \ pun takpe tapi saja je nak tunjuk
 //boleh jugak betulkan benda ni dengan pakai jenis tick yang lain tapi sajala nak tunjuk cara ni
+
+// PRACTICE
+
+// practice 1
+const result = (number1, number2) => {
+  return number1 + number2;
+};
+
+const jumlah = `Jumlahnya adalah ${result(10, 2)}`;
+console.log(jumlah);
+
+// practice 2
+const string1 = `hai
+nama 
+saya
+Shahirul`;
+
+console.log(string1);
+
+// practice 3
+const string2 = "hai, I'm Shahirul"; // speatutnya jadi const string2 = 'hai, I\'m Shahirul'; tapi lepas save dia cam simplified jadi const string2 = "hai, I'm Shahirul";

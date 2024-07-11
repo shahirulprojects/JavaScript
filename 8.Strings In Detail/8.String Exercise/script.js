@@ -26,3 +26,49 @@ console.log(substringGuests);
 //Store that array in a variable called guests
 const guest = substringGuests.split(",");
 console.log(guest);
+
+// PRACTICE
+
+const senaraiNama = "Ali, Abu, Seman, Manap, Dahyun";
+
+// get the length of the string
+console.log(senaraiNama.length);
+
+// uppercase the entire string
+console.log(senaraiNama.toUpperCase());
+
+// lowercase the entire string
+console.log(senaraiNama.toLowerCase());
+
+// check whether "Dahyun" is in the senarai Nama
+console.log(senaraiNama.includes("Dahyun"));
+
+// create a substring that contains only the following "Ali, Abu, Dahyun"
+
+// cara 1
+const arrayName = senaraiNama.split(", "); // turning it into array and secara tak langsung buang comma tu
+
+const selectedName = [arrayName[0], arrayName[1], arrayName[4]];
+
+const selectedList = selectedName.join(", "); // turning it back into string
+console.log(selectedList);
+
+// cara 2
+
+// Finding the start and end positions for "Ali, "
+const startAli = senaraiNama.indexOf("Ali");
+const endAli = startAli + "Ali, ".length;
+
+// Finding the start and end positions for "Abu, "
+const startAbu = senaraiNama.indexOf("Abu");
+const endAbu = startAbu + "Abu, ".length;
+
+// Finding the start position for "Dahyun"
+const startDahyun = senaraiNama.indexOf("Dahyun");
+
+// Combining the slices
+const combinedString =
+  senaraiNama.slice(startAli, endAli) +
+  senaraiNama.slice(startAbu, endAbu) +
+  senaraiNama.slice(startDahyun);
+console.log(combinedString); // Output: "Ali, Abu, Dahyun"

@@ -9,3 +9,8 @@ console.log(lowerCaseString);
 //2.UPPERCASE
 const upperCaseString = mixedCaseString.toUpperCase(); //kena declare variable baru sebab toUpperCase() method tak ubah string tu tapi dia cipta string baru yang uppercase
 console.log(upperCaseString);
+
+// PRACTICE
+
+const hurufBesar = "ayat ini asalnya ditulis dengan huruf kecil";
+console.log(hurufBesar.toUpperCase());

@@ -18,3 +18,11 @@ const firstLetter = name2[0];
 
 const lastLetter = name2[name2.length - 1]; //boleh adjustla tolak2 ni cam katakanla hang nak second last ke en,ha tolakla 2
 console.log(firstLetter, lastLetter);
+
+// PRACTICE
+
+// practice 1
+const name3 = "Shahirul";
+console.log(name3[3]);
+
+console.log(name3[name3.length - 1]);

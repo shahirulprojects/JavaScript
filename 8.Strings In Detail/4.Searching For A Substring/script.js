@@ -31,3 +31,22 @@ console.log(hobbies2.startsWith("HTML"));
 //endsWith() used to tentukan sama ada a string tu ends dengan huruf atau perkataan yang dispecified tu ke tidak (true or false)
 console.log(hobbies1.endsWith("."));
 console.log(hobbies2.endsWith("CSS"));
+
+// PRACTICE
+
+const biodata = "Hi, I'm Shahirul and I am 22 years old.";
+
+const index3 = biodata.indexOf("Shahirul");
+console.log(index3);
+const index4 = biodata.lastIndexOf("am");
+console.log(index4);
+
+if (biodata.includes("Shahirul")) {
+  console.log("Dia hensem");
+  if (biodata.startsWith("Hi")) {
+    console.log("Dia sopan sebab kasi hi");
+  }
+  if (biodata.endsWith(".")) {
+    console.log("Dia sopan sebab akhirkan ayat dengan titik");
+  }
+}

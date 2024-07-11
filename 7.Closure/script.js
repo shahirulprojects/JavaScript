@@ -53,7 +53,7 @@ const name1 = () => {
     console.log(nama);
   };
 
-  name2();
+  return name2;
 };
 
 const panggilName = name1();
