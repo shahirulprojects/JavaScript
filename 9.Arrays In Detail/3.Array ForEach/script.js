@@ -38,3 +38,30 @@ numbers.forEach((number) => {
 });
 
 console.log(sum);
+
+// PRACTICE
+
+const foodList = ["pizza", "burger", "ice cream", "oreo"];
+
+// cara biasa
+for (let i = 0; i < foodList.length; i++) {
+  console.log(foodList[i]);
+}
+
+// pakai forEach
+foodList.forEach((food) => {
+  console.log(food);
+});
+
+// pakai forEach jugak tapi boleh pilih nak pakai function mana
+const displayFood = (food) => console.log(food);
+foodList.forEach(displayFood);
+
+// matematik operation
+let jumlah = 0;
+const senaraiNombor = [5, 6, 9, 3];
+
+senaraiNombor.forEach((nombor) => {
+  jumlah += nombor;
+});
+console.log(jumlah);
