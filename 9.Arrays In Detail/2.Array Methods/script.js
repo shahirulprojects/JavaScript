@@ -1,7 +1,7 @@
 const names = ["Shahirul", "Emma", "Dahyun", "Cate", "Emilia"];
 
 //1.ARRAY PUSH
-//adds a new element containing the entered value to the end of the array
+//adds a new element containing the entered value to the END of the array
 names.push("Zoe");
 //console.log(names.push()) kalau buat camni dia akan return the length of the current array
 console.log(names);

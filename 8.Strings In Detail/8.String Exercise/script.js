@@ -46,6 +46,10 @@ console.log(senaraiNama.includes("Dahyun"));
 // create a substring that contains only the following "Ali, Abu, Dahyun"
 
 // cara 1
+const newSenarai = senaraiNama.slice(0, 9) + senaraiNama.slice(23);
+console.log(newSenarai);
+
+// cara 2
 const arrayName = senaraiNama.split(", "); // turning it into array and secara tak langsung buang comma tu
 
 const selectedName = [arrayName[0], arrayName[1], arrayName[4]];
@@ -53,7 +57,7 @@ const selectedName = [arrayName[0], arrayName[1], arrayName[4]];
 const selectedList = selectedName.join(", "); // turning it back into string
 console.log(selectedList);
 
-// cara 2
+// cara 3 (paling efficient in case array tu berubah susunan)
 
 // Finding the start and end positions for "Ali, "
 const startAli = senaraiNama.indexOf("Ali");

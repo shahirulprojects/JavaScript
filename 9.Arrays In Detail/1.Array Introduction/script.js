@@ -25,10 +25,54 @@ for (let i = 0; i < months.length; i++) {
 }
 
 //Array allows different data types to be store in it since array itself is the typeof object
-const variousDataTypes = [
+const variousDataTypes1 = [
   "Apple", //string
   { name: "Emma" }, //object
   true, //boolean
   () => {}, //arrow function
 ];
-console.log(variousDataTypes);
+console.log(variousDataTypes1);
+
+// PRACTICE
+
+const array = [
+  "ubat gigi",
+  "berus gigi",
+  "sabun mandi",
+  "sabun baju",
+  "pencuci muka",
+];
+
+// access and print the array
+console.log(array[2]);
+
+// replacing elements in the array
+array[3] = "Loofah";
+console.log(array[3]);
+console.log(array);
+
+// adding new elements in the array
+array[5] = "shampoo";
+console.log(array[5]);
+
+// get the total count of the elements in the array
+console.log(array.length);
+
+// for loop
+for (let i = 0; i < array.length; i++) {
+  console.log(array[i]);
+}
+
+// various data types
+const variousDataTypes2 = [
+  {
+    name: "Shahirul",
+    age: "22",
+  },
+  "hai nama saya Shahirul",
+  100,
+  false,
+  () => {},
+];
+
+console.log(variousDataTypes2);
