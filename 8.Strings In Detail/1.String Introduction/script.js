@@ -60,4 +60,4 @@ Shahirul`;
 console.log(string1);
 
 // practice 3
-const string2 = "hai, I'm Shahirul"; // speatutnya jadi const string2 = 'hai, I\'m Shahirul'; tapi lepas save dia cam simplified jadi const string2 = "hai, I'm Shahirul";
+const string2 = "hai, I'm Shahirul"; // sepatutnya jadi const string2 = 'hai, I\'m Shahirul'; tapi lepas save dia cam simplified jadi const string2 = "hai, I'm Shahirul";

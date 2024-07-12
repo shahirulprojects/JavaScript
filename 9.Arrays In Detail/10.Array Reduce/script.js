@@ -53,6 +53,6 @@ console.log(jumlah);
 
 const nombor = [10, 90, 87, 63, 98];
 
-const jumlahNombor = nombor.reduce((jumlah, nombor) => jumlah + nombor, 0);
+const jumlahNombor = nombor.reduce((jumlah, number) => jumlah + number, 0);
 
 console.log(jumlahNombor);
