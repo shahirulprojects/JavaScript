@@ -43,6 +43,7 @@ const fetchUserPhotos = (userName) => {
     setTimeout(() => {
       console.log(`[Now we have the photos for ${userName}]`);
       resolve(["Photo 1", "Photo 2"]);
+      reject("photos not found");
     }, 2000);
   });
 };
@@ -52,6 +53,7 @@ const fetchPhotoDetails = (photo) => {
     setTimeout(() => {
       console.log(`[Now we have the photo details for the photo ${photo}]`);
       resolve(["Details:bla bla bla"]);
+      reject("there is no details for this photo");
     }, 2000);
   });
 };
@@ -61,7 +63,7 @@ const displayData = async () => {
   const photos = await fetchUserPhotos(user.userName); //kita tulis "user.userName" and bukan "user" sebab "user" tu object,kita nak nilai object tu
   const details = await fetchPhotoDetails(photos[0]);
 
-  console.log(details);
+  console.log(user, photos, details);
 };
 
 displayData();
