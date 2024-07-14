@@ -26,59 +26,54 @@
 //     <title>Introduction to DOM</title>
 // </head>
 // <body>
-//     
-        //letak id sebab nanti senang nak cari/select element
-        //ada 3 cara untuk cari/select element: id , tag name , class name , CSS selectors
-        
-        //ID:
-        //we can do that by typing const el=document.getElementById("element-below-input") at the webpage console.Bukak webpage>Inspect>Console
-        //akan dapat undefined,tapi takpe kita type ni console.log(el)
-        //<input></input>
-        //<h1 id="element-below-input">TEST 1</h1>
+//
+//letak id sebab nanti senang nak cari/select element
+//ada 3 cara untuk cari/select element: id , tag name , class name , CSS selectors
 
-        //TAG NAME:
-        //Used when we want to manipulate all elements from a particular kind
-        //lets say we want to manipulate all headings in our website (jenis/nama headings:h1)
-        //we can do that by typing document.getElementsByTagName("h1") at the webpage console.Bukak webpage>Inspect>Console
-        //akan dapat ni HTMLCollection(2) [h1, h1] which is dalam array.Array tu mengandungi elements yang ada jenis headings h1
-        //<h1>TEST 1</h1>
-        //<h1>TEST 2</h1>
+//ID:
+//we can do that by typing const el=document.getElementById("element-below-input") at the webpage console.Bukak webpage>Inspect>Console
+//akan dapat undefined,tapi takpe kita type ni console.log(el)
+//<input></input>
+//<h1 id="element-below-input">TEST 1</h1>
 
-        //CLASS NAME:
-        //class name are assigned to elements to style them uniquely
-        //we can do that by typing document.getElementsByClassName("test") at the webpage console.Bukak webpage>Inspect>Console
-        //akan dapat ni HTMLCollection(2) [h1.test, h1.test] which is dalam array.Array tu mengandungi elements yang ada class name "test"
-        //<h1 class="test">TEST 1</h1>
-        //<h1 class="test">TEST 2</h1>
+//TAG NAME:
+//Used when we want to manipulate all elements from a particular kind
+//lets say we want to manipulate all headings in our website (jenis/nama headings:h1)
+//we can do that by typing document.getElementsByTagName("h1") at the webpage console.Bukak webpage>Inspect>Console
+//akan dapat ni HTMLCollection(2) [h1, h1] which is dalam array.Array tu mengandungi elements yang ada jenis headings h1
+//<h1>TEST 1</h1>
+//<h1>TEST 2</h1>
 
-        //CSS SELECTORS:
-        //Css selectors combine multiple classes,IDs,tag names, and many more things to actually select a particular element
-        //kira macam dia tapis betul2 la.Consider it macam if statement yang camni if(a && b)
-        //dia kena satisfy dua2 kriteria a & b dulu baru dia akan kena select
-        //we can do that by typing document.querySelectorAll("h2.test") at the webpage console.Bukak webpage>Inspect>Console
-        //akan dapat ni NodeList(2) [h2.test, h2.test] which is dalam array.Array tu mengandungi elements yang ada tag name "h2" and class name "test"
-        //<h1 class="test">TEST 1</h1>
-        //<h2 class="test">TEST 2</h2>
-        //<h2 class="test">TEST 3</h2>
+//CLASS NAME:
+//class name are assigned to elements to style them uniquely
+//we can do that by typing document.getElementsByClassName("test") at the webpage console.Bukak webpage>Inspect>Console
+//akan dapat ni HTMLCollection(2) [h1.test, h1.test] which is dalam array.Array tu mengandungi elements yang ada class name "test"
+//<h1 class="test">TEST 1</h1>
+//<h1 class="test">TEST 2</h1>
 
-        //we can use querySelector to replace all other methods we learnt so far in this DOM
-        //we use document.querySelector() to target only one specific element
-        //we use document.querySelectorAll() to target multiple elements
+//CSS SELECTORS:
+//Css selectors combine multiple classes,IDs,tag names, and many more things to actually select a particular element
+//kira macam dia tapis betul2 la.Consider it macam if statement yang camni if(a && b)
+//dia kena satisfy dua2 kriteria a & b dulu baru dia akan kena select
+//we can do that by typing document.querySelectorAll("h2.test") at the webpage console.Bukak webpage>Inspect>Console
+//akan dapat ni NodeList(2) [h2.test, h2.test] which is dalam array.Array tu mengandungi elements yang ada tag name "h2" and class name "test"
+//<h1 class="test">TEST 1</h1>
+//<h2 class="test">TEST 2</h2>
+//<h2 class="test">TEST 3</h2>
 
-        //contoh kalau nak ganti cara selecting elements by ID
-        //document.querySelectorAll("#element-below-input") // # tu memang kena letak
+//we can use querySelector to replace all other methods we learnt so far in this DOM
+//we use document.querySelector() to target only one specific element
+//we use document.querySelectorAll() to target multiple elements
 
-        //contoh kalau nak ganti cara selecting elements by TAG NAME
-        //document.querySelectorAll("h1")
+//contoh kalau nak ganti cara selecting elements by ID
+//document.querySelectorAll("#element-below-input") // # tu memang kena letak
 
-        //contoh kalau nak ganti cara selecting elements by CLASSNAME
-        //document.querySelectorAll(".test")
-       
+//contoh kalau nak ganti cara selecting elements by TAG NAME
+//document.querySelectorAll("h1")
 
+//contoh kalau nak ganti cara selecting elements by CLASSNAME
+//document.querySelectorAll(".test")
 
 //     <script src="script.js"></script>
 // </body>
 // </html>
-
-
-
