@@ -1,7 +1,7 @@
 //DOM
 //it is a standard to access and share documents or websites all over the Internet
 //it represents how a particular document is structured
-//it also helps programming languages like Javascript and others to understand and modify the website
+//it also helps programming languages like JavaScript and others to understand and modify the website
 //HTML DOM defines how a HTML page is structured (how it can be modified,how can we modify the properties,how we can add styles)
 //In simple words,HTML DOM is a tree of nested HTML elements that are defined while designing the HTML page
 //Therefore we must follow certain rules to actually define the HTML page
